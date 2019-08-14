@@ -343,7 +343,7 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
                 continue;
             } else if (!isset($productData[$attributeIdentifier]) || !$productData[$attributeIdentifier]) {
                 if ($attributeCode != 'none' && $this->_isAttributeUsed($attributeIdentifier)) {
-                    if (!strlen($product->getData($attributeIdentifier))) {
+                    if (!strlen($product->getData($attributeCode))) {
                         if ($this->_getAttribute($attributeCode)->getSourceModel() == 'nrapps_idealo/source_yesNoDefault') {
                             $productData[$attributeIdentifier] = intval(Mage::getStoreConfig('nrapps_idealo/default_values/' . $attributeIdentifier, $this->_getStoreId()));
                         } else {
@@ -1400,18 +1400,7 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
                 ' ',
                 $value
             );
-            if ($this->getFeed()->getType() == 'xml') {
-                $value = str_replace(
-                    array('&', '<', '>'),
-                    array('&amp;', '&lt;', '&gt;'),
-                    $value
-                );
-                $value = str_replace(
-                    array('&amp;amp;', '&amp;lt;', '&amp;gt;'),
-                    array('&amp;', '&lt;', '&gt;'),
-                    $value
-                );
-            }
+
             return $value;
         }
         if (is_array($value)) {

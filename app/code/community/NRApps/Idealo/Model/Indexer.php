@@ -453,18 +453,12 @@ class NRApps_Idealo_Model_Indexer extends Mage_Index_Model_Indexer_Abstract
             return;
         }
 
-        if (is_null($storeId)) {
-            foreach (Mage::app()->getStores() as $store) {
-                $this->_deleteIndexForProduct($productId, $feedType, $store->getId());
-            }
-            return;
-        }
-
         if ($feedType == 'xml') {
+            $productSku = Mage::getResourceSingleton('catalog/product')->getAttributeRawValue($productId, 'sku', Mage_Core_Model_App::ADMIN_STORE_ID);
             $data = '
     <offer>
         <command>Delete</command>
-        <sku>' . $storeId . 'p' . $productId . '</sku>
+        <sku>' . $productSku . '</sku>
     </offer>';
 
             $this->getResource()->update(array(
