@@ -23,8 +23,16 @@ class NRApps_Idealo_Model_Api
     public function transferAll() 
     {
         $this->deleteExistingOffersOnFirstRun();
-        
+
+        if (!Mage::getStoreConfigFlag('nrapps_idealo/settings/is_active')) {
+            return;
+        }
+
         foreach(Mage::app()->getStores() as $store) {
+
+            if (!Mage::getStoreConfigFlag('nrapps_idealo/settings/is_active', $store->getId())) {
+                continue;
+            }
 
             if (Mage::getStoreConfigFlag('nrapps_idealo/settings/test_mode', $store->getId())) {
                 continue;
@@ -142,6 +150,18 @@ class NRApps_Idealo_Model_Api
         }
         $return = curl_exec($process);
 
+        if (preg_match('/shop.*is.*not.*partner/i', $return)) {
+            $this->_getSetup()->setConfigData(
+                'nrapps_idealo/settings/is_active',
+                0
+            );
+            $message = 'Shop is not a partner. ' . PHP_EOL . PHP_EOL;
+            $message .= 'Request: ' . PHP_EOL . $xml . PHP_EOL . PHP_EOL;
+            $message .= 'Response: ' . PHP_EOL . $return . PHP_EOL;
+            $this->_handleApiError($message);
+            throw new NRApps_Idealo_AccountDisabledException('Please check the access data and the state of the registration of your shop at idealo.');
+        }
+
         if ($return === false) {
             $message = 'cURL Error ' . curl_errno($process) . ': ' . curl_error($process) . PHP_EOL . PHP_EOL;
             $message .= 'Request: ' . PHP_EOL . $xml . PHP_EOL . PHP_EOL;
@@ -175,8 +195,7 @@ class NRApps_Idealo_Model_Api
             $xml = new SimpleXMLElement($response);
             foreach ($xml->offerResponse as $xmlOfferResponse) {
                 $sku = (string)$xmlOfferResponse->sku;
-                list($storeId, $productId) = explode('p', $sku);
-                $indexResource->markProcessed($storeId, $productId, (string)$xmlOfferResponse->status, (string)$xmlOfferResponse->statusMsg);
+                $indexResource->markProcessedBySku($sku, (string)$xmlOfferResponse->status, (string)$xmlOfferResponse->statusMsg);
             }
         } catch (Exception $e) {
             $message = $e->getMessage() . PHP_EOL . PHP_EOL;
@@ -353,5 +372,13 @@ class NRApps_Idealo_Model_Api
                 Mage::dispatchEvent('adminhtml_cache_refresh_type', array('type' => 'config'));
             }
         }
+    }
+
+    /**
+     * @return Mage_Catalog_Model_Resource_Setup
+     */
+    protected function _getSetup()
+    {
+        return Mage::getResourceModel('catalog/setup', 'catalog_setup');
     }
 }

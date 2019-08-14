@@ -249,6 +249,8 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
 
         $productData = $this->_getProductData($product);
 
+        $productData = $this->_getFilteredValue($productData);
+
         $processor->setVariables($productData);
 
         return $processor->filter($this->_getBody());
@@ -1001,8 +1003,6 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
         }
 
         switch($attribute->getFrontendInput()) {
-            case 'textarea':
-                return str_replace(array("\r\n", "\n", "\r"), '<br />', trim($product->getData($attributeCode)));
             case 'multiselect':
                 $value = '';
                 $valueIds = explode(',', $product->getData($attributeCode));
@@ -1024,8 +1024,9 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
                 $date = new Zend_Date($product->getData($attributeCode), Zend_Date::ISO_8601);
                 $date->setTimezone(Mage::getStoreConfig('general/locale/timezone'));
                 return $date->get(Zend_Date::ISO_8601);
+            case 'textarea':
             default:
-                return trim($product->getData($attributeCode));
+                return $product->getData($attributeCode);
         }
     }
 
@@ -1384,5 +1385,45 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
             return '; ';
         }
         return PHP_EOL;
+    }
+
+    /**
+     * @param string|array $value
+     * @return string|array
+     */
+    protected function _getFilteredValue($value)
+    {
+        if (is_string($value)) {
+            $value = trim(strip_tags($value));
+            $value = str_replace(
+                array("\r\n", "\n", "\r", '  '),
+                ' ',
+                $value
+            );
+            if ($this->getFeed()->getType() == 'xml') {
+                $value = str_replace(
+                    array('&', '<', '>'),
+                    array('&amp;', '&lt;', '&gt;'),
+                    $value
+                );
+                $value = str_replace(
+                    array('&amp;amp;', '&amp;lt;', '&amp;gt;'),
+                    array('&amp;', '&lt;', '&gt;'),
+                    $value
+                );
+            }
+            return $value;
+        }
+        if (is_array($value)) {
+            foreach ($value as $key => $subValue) {
+                $value[$key] = $this->_getFilteredValue($subValue);
+            }
+        }
+        if ($value instanceof Varien_Object) {
+            foreach ($value->getData() as $key => $subValue) {
+                $value->setData($key, $this->_getFilteredValue($subValue));
+            }
+        }
+        return $value;
     }
 }

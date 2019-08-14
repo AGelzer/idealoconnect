@@ -60,6 +60,49 @@ class NRApps_Idealo_Model_Resource_Indexer extends Mage_Core_Model_Resource_Db_A
     }
 
     /**
+     * Mark row as processed, including status
+     *
+     * @param string $sku
+     * @param string $status
+     * @param string $statusMessage
+     */
+    public function markProcessedBySku($sku, $status = 'OK', $statusMessage = '')
+    {
+        $productId = Mage::getSingleton('catalog/product')->getIdBySku($sku);
+        $condition = $this->_getReadAdapter()->quoteInto('product_id = ?', $productId);
+        $condition .= ' AND ' . $this->_getReadAdapter()->quoteInto('feed_type = ?', 'xml');
+
+        $this->_getWriteAdapter()->update(
+            $this->getTable('nrapps_idealo/index'),
+            array(
+                'is_processed' => 1,
+                'status' => $status,
+                'status_message' => $statusMessage,
+                'transfer_date' => new Zend_Db_Expr('NOW()'),
+            ),
+            $condition
+        );
+    }
+
+    /**
+     * Mark all rows as uprocessed so they will get transferred again
+     */
+    public function markAllUnprocessed()
+    {
+        $condition = $this->_getReadAdapter()->quoteInto('feed_type = ?', 'xml');
+
+        $this->_getWriteAdapter()->update(
+            $this->getTable('nrapps_idealo/index'),
+            array(
+                'is_processed' => 0,
+                'status' => null,
+                'status_message' => null,
+            ),
+            $condition
+        );
+    }
+
+    /**
      * @param array $indexData
      */
     public function deleteByData($indexData)

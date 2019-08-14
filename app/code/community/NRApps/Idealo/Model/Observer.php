@@ -106,6 +106,11 @@ class NRApps_Idealo_Model_Observer
             Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('nrapps_idealo')->__(
                 'Connection to idealo API successful.'
             ));
+        } catch (NRApps_Idealo_AccountDisabledException $e) {
+            Mage::logException($e);
+            Mage::getSingleton('adminhtml/session')->addError(Mage::helper('nrapps_idealo')->__(
+                'Please check the access data and the state of the registration of your shop at idealo.'
+            ));
         } catch (Exception $e) {
             Mage::logException($e);
             Mage::getSingleton('adminhtml/session')->addError(Mage::helper('nrapps_idealo')->__(
