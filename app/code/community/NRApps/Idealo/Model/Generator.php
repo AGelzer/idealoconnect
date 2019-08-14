@@ -618,7 +618,7 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
     {
         if ($product->getParentProductIds()) {
 
-            if (Mage::getStoreConfig('nrapps_idealo/default_values/configurable_child_products_price', $this->_getStoreId())
+            if (Mage::getStoreConfig('nrapps_idealo/product_options/configurable_child_products_price', $this->_getStoreId())
                 == NRApps_Idealo_Model_Source_ConfigurableChildProductsPriceType::PRICE_TYPE_PARENT_WITH_MODIFICATIONS) {
 
                 /** @var $parentProduct Mage_Catalog_Model_Product */
@@ -647,7 +647,7 @@ class NRApps_Idealo_Model_Generator extends Mage_Core_Model_Abstract
                 return $priceModel->getFinalPrice(null, $parentProduct);
             }
 
-            if (Mage::getStoreConfig('nrapps_idealo/default_values/configurable_child_products_price', $this->_getStoreId())
+            if (Mage::getStoreConfig('nrapps_idealo/product_options/configurable_child_products_price', $this->_getStoreId())
                 == NRApps_Idealo_Model_Source_ConfigurableChildProductsPriceType::PRICE_TYPE_PARENT_WITHOUT_MODIFICATIONS) {
 
                 return Mage::getResourceSingleton('catalog/product')->getAttributeRawValue(current($product->getParentProductIds()), 'price', $product->getStoreId());
