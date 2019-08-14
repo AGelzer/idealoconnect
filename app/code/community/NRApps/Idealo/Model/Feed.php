@@ -44,7 +44,7 @@ class NRApps_Idealo_Model_Feed extends Varien_Object
         {{/if}}{{if ean}}<ean><![CDATA[{{var ean}}]]></ean>
         {{/if}}{{if han}}<han><![CDATA[{{var han}}]]></han>
         {{/if}}{{if pzn}}<pzn><![CDATA[{{var pzn}}]]></pzn>
-        {{/if}}<description><![CDATA[{{var description:970}}]]></description>
+        {{/if}}<description><![CDATA[{{var description}}]]></description>
         {{if is_used}}<used>true</used>
         {{/if}}{{if is_rebuild}}<rebuild>true</rebuild>
         {{/if}}{{if has_contract}}<contract>true</contract>
@@ -52,7 +52,7 @@ class NRApps_Idealo_Model_Feed extends Varien_Object
         {{/if}}{{if special_price}}<formerPrices>
             <formerPrice>{{var price}}</formerPrice>
         </formerPrices>
-        {{/if}}{{if base_price}}<basePrice measure="{{var base_price_base_amount}}" unit="{{var base_price_base_unit}}">{{var base_price_raw}}</basePrice>
+        {{/if}}{{if base_price}}<basePrice measure="{{var base_price_base_amount}}" unit="<![CDATA[{{var base_price_base_unit}}]]">{{var base_price_raw}}</basePrice>
         {{/if}}{{if merchant}}<merchant><![CDATA[{{var merchant}}]]></merchant>
         {{/if}}<attributes>
         {{foreach additional_attributes as row}}{{if row.attribute_value}}    <attribute name="{{var row.attribute_code}}">

@@ -360,7 +360,7 @@ class NRApps_Idealo_Model_Api
     </offer>';
                 }
 
-                $xml = Mage::getModel('nrapps_idealo/generator')->getFeedContent(false, $rows);
+                $xml = Mage::getModel('nrapps_idealo/generator', $store)->getFeedContent(false, $rows);
 
                 $response = $this->_getResponseFromAPI($xml, $storeId);
                 $this->_logRequest($response, $xml);

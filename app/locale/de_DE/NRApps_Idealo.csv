@@ -47,7 +47,7 @@
 "Voucher Code","Gutscheincode"
 "Voucher code plus description. Please be sure to stick to the format of the example! i.e. CODE (description)","Gutscheincode plus Beschreibung. Bitte halten Sie sich an das Beispielformat! Z.B. CODE (Beschreibung)"
 "Merchant","Verkäufer"
-"Merchant name (for resellers or marketplace merchants)","Händlername (für Reseller oder Marktplatz-Verkäufer"
+"Merchant name (for resellers or marketplace merchants)","Händlername (für Reseller oder Marktplatz-Verkäufer)"
 "The attributes have been assigned.","Die Attribute wurden zugeordnet."
 "The attributes have been assigned. Please choose the default settings now.","Die Attribute wurden zugeordnet. Bitte wählen Sie jetzt die Standardeinstellungen."
 "%s attributes have been created. You can fill them on the product edit page in the tab ""idealo"".","%s Attribute wurden angelegt. Sie können sie im Artikelformular im Tab ""idealo"" befüllen."

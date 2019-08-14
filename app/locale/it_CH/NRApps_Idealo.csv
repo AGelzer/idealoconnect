@@ -1,0 +1,182 @@
+idealo Connect,idealo Connect
+Settings,Impostazioni
+"Directory ""%s"" does not exist. Installation of idealo Connect incomplete?","La directory ""%s"" non esiste. L'installazione di idealo Connect è stata completata?"
+Re-Generation necessary,Rigenerazione necessaria
+"File <a href=""%s"" target=""_blank"">%s</a> was generated successfully","Il file <a href=""%s"" target=""_blank"">%s</a> è stato generato con successo."
+idealo Connect - Manage Attributes,idealo Connect – Configurazione degli attributi
+Manage Attributes,Configurare gli attributi
+Feed Attributes,Attributi idealo
+Create new attribute,Creare un nuovo attributo
+Use existing attribute,Usare attributi esistenti
+Manufacturer,Produttore
+Manufacturer SKU,Codice del produttore
+Delivery Time,Termine di consegna
+Delivery Times,Termini di consegna
+Delivery Time (out of stock),Termini di consegna (articolo non disponibile)
+Add,Aggiungere
+Shipping Cost,Costi di spedizione
+Shipping Cost idealo.de,Costi di spedizione idealo.de
+Shipping Cost idealo.at,Costi di spedizione idealo.at
+Shipping Cost idealo.co.uk,Costi di spedizione idealo.co.uk
+Shipping Cost idealo.fr,Costi di spedizione idealo.fr
+Shipping Cost idealo.it,Costi di spedizione idealo.it
+Shipping Cost idealo.es,Costi di spedizione idealo.es
+Shipping Cost idealo.pl,Costi di spedizione idealo.pl
+Shipping Cost idealo.in,Costi di spedizione idealo.in
+Shipping Cost based on Price,Costi di spedizione basati sul prezzo
+Shipping Cost based on Weight,Costi di spedizione basati sul peso
+Shipping Comment,Commento sulla spedizione
+Shipping Comments,Commenti sulla spedizione
+Comment on shipping of article or methods of payment offered,Commento sulla spedizione dell'articolo o metodi di pagamento offerti
+OEN,OEM
+"Original replacement part number consisting of manufacturer's initials and identifier code, separated by a comma","Codice del pezzo di ricambio originale, composto dalle iniziali del fabbricante ed il suo codice di identificazione, separati da una virgola"
+KBA,KBA (solo in Germania)
+"Kraftfahrt-Bundesamt (KBA) number, i.e. German Federal Motor Transport Authority number, consisting of the 4 digits in the Manufacturer Key Number and the first 3 characters in the Type Key Number","Codice del Kraftfahrt-Bundesamt (KBA), Motorizzazione Civile della Repubblica Federale di Germania"
+EAN,EAN
+"EAN/GTIN of the offer, improves allocation to product catalogue. ISBN numbers can also be given here",Il codice EAN/GTIN (codice a barre) migliora il riconoscimento delle offerte nel catalogo prodotti. È possibile includere qui anche l'ISBN. 
+HAN,HAN
+"Article number defined by manufacturer, improves allocation to product catalogue","Codice articolo del produttore, migliora il riconoscimento delle offerte nel catalogo prodotti. "
+PZN,PZN (solo in Germania)
+Central Pharmaceutical Number of offer (only for medical offers),Pharmazeutische Zentralnummer (solo per prodotti farmaceutici)
+Is Used,Usato
+"Marks offers that are not new (e.g. returns, demonstration model, opened packaging, etc.)","Articoli non nuovi (per esempio resi, articoli da esposizione, con imballaggio aperto ecc.)"
+Is Rebuild,Riproduzione
+"Marks offers that are a replica of products by another manufacturer. This mark-up is necessary if the original product comes up in the offer title (e.g. ""Quality battery compatible with Canon HK-2222"")",Articoli che sono repliche di altri fabbricanti. Indispensabile quando il nome dell'articolo originale compare nel titolo dell'offerta (per esempio „Batteria comparibile con Canon HK-2222“)
+Has Contract,Con contratto
+Marks offers that can only be acquired through signing a contract (e.g. mobile phones),Articoli che possono essere acquisiti solo con un contratto (per esempio telefoni cellulari)
+Voucher Code,Codice sconto
+Voucher code plus description. Please be sure to stick to the format of the example! i.e. CODE (description),Codice sconto con descrizione. È necessario usare il seguente formato: CODICE (Descrizione)
+Merchant,Venditore
+Merchant name (for resellers or marketplace merchants),Nome del venditore (per esempio nel caso di rivenditori o marketplace)
+The attributes have been assigned.,Gli attributi sono stati assegnati.
+The attributes have been assigned. Please choose the default settings now.,Gli attributi sono stati assegnati. Scegli la configurazione standard.
+"%s attributes have been created. You can fill them on the product edit page in the tab ""idealo"".",Sono stati creati %s attributi. È possibile riempirli nella scheda „idealo“ della pagina del prodotto.  
+"idealo Connect requires you to set up attributes. Click <a href=""%s"">here</a> to go to the attribute management.","idealo Connect richiede la configurazione degli attributi. Clicca <a href=""%s"">hier</a> per accedere alla Configurazione degli attributi"
+Default Values,Valori standard
+Export the following Product Types,Esportare i seguenti tipi di articolo
+All,Tutti
+Export Bundle Products without a fixed price,Esportare un bundle senza un prezzo fisso
+No Price will be available for those products,Nessun prezzo disponibile per questi articoli.
+,
+Use Default,Utilizzo standard
+Calculate automatically,Calcolare automaticamente
+In Stock,In stock
+Available for Order,Disponibile
+Out of Stock,Non disponibile
+Export Parent Product,Esportare prodotto principale
+Export Children Products,Esportare variante del prodotto principale
+Allowed Product Types,Tipi di articoli permessi
+Export Type for Configurable Products,Tipo di esportazione per articoli configurabili
+No Export,Non esportare
+Product Data,Dati dell'articolo
+Shipping Costs Calculation Method,Tipo di calcolo dei costi di spedizione
+From Price,A partire dal prezzo di
+"Only for Shipping Costs Calculation Method ""Price"" (see above)",Solo per il tipo di calcolo dei costi di spedizione „Prezzo“ (vedi sopra) 
+"Only for Shipping Costs Calculation Method ""Weight"" (see above)",Solo per il tipo di calcolo dei costi di spedizione „Peso“ (vedi sopra) 
+"Only for Shipping Costs Calculation Method ""Weight"" (see above)<br />Product attribute ""Weight"" [weight] will be used to determine weight.",Solo per il tipo di calcolo dei costi di spedizione „Peso“ (vedi sopra).<br />Per determinare il peso sarà utilizzato il valore dell'attributo „Peso“ [weight] 
+You can find the settings for the <strong>minimum order amount</strong> in System -> Configuration -> Sales,Le impostazioni per l'<strong>ordine minimo</strong> si trovano in Sistema → Configurazione → Vendite
+From Weight,A partire dal peso di
+Exclude from idealo Connect,Escludere da idealo Connect
+"Exclude only Categories, not included Products","Escludere solo categorie, non prodotti inclusi"
+Leave empty to use default,Lasciare vuoto per la configurazione standard
+Activated Payment Methods,Metodi di pagamento attivati
+Payment Method,Metodi di pagamento
+Surcharge,Supplemento
+Invoice,Fattura
+Credit Card,Carta di credito
+Prepaid,Pagamento anticipato
+PayPal,PayPal
+Debit Payment,Addebito
+Cash on Delivery,Contrassegno
+Bank transfer via Sofort,Bonifico bancario tramite Sofort
+Payment by post,Vaglia postale
+e-payment standard (Austria),e-payment standard (Austria)
+Attribute Sets,Gruppi di attributi
+Allowed Attribute Sets,Gruppi di attributi permessi
+Calculate price of configurable child products as,Articoli configurabili: calcolare il prezzo delle varianti in base a
+Price of parent product with modifications (Magento Default),Prezzo dei prodotti principali con modifiche (Magento Standard)
+Price of parent product without modifications,Prezzo dei prodotti principali senza modifiche
+"Price of child product (i.e. with BCP, SCP)","Prezzo delle varianti (per esempio con BCP, SCP)"
+"Use option ""child product"" or ""parent product without modifications"" for better performance. There can be memory leaks with the option ""parent product <strong>with</strong> modifications"".",Scegliere l'opzione „Varianti“ o „Prodotti principali senza modifiche“ per una migliore performance. Possono verificarsi problemi di salvataggio scegliendo l'opzione „Prodotti principali <strong>con</strong> modifiche“
+Base Price,Prezzo base
+"The idealo Connect is now installed. <a href=""%s"">Click here to start the configuration process.</a>","idealo Connect è installato. <a href=""%s"">Clicca qui per iniziare la configurazione.</a>"
+idealo Connect Setup Step 1/2: Attributes Setup,Configurazione di idealo Connect passo 1/2: Configurazione degli attributi 
+idealo Connect Setup Step 2/2: Configuration and Default Values,Configurazione di idealo Connect passo 2/2: Configurazione e valori standard 
+"If you see an error here, please logout and login again.","Se ricevi un avviso di errore, effettua il logout e poi nuovamente il login."
+"<a href=""%s"" target=""_blank"">Possible Values</a>","<a href=""%s"" target=""_blank"">Valori possibili</a>"
+Do not use this attribute,Non usare questo attributo
+Select field (dropdown),Seleziona campo (dropdown)
+Select field (yes / no),Seleziona campo (sì/no)
+Text field,Campo di testo
+Text field (decimal value),Campo di testo (valori decimali)
+Text field (price),Campo di testo (prezzo)
+Energy Efficiency Class,Classe di efficienza energetica
+Used in following feed templates,Usato nei seguenti modelli di feed 
+Use Configuration Value,Usare valore di configurazione
+Yes,Sì
+No,No
+API URL for Update Requests,URL dell'API per richieste di aggiornamento
+idealo User,Nome utente idealo
+idealo Password,Password idealo
+Indexing of generated Product Data for idealo Connect,Indicizzazione dei dati dei prodotti generati per idealo Connect
+Contact csv@idealo.de to gain access.,Contatta tam@idealo.it per accedere ai dati.
+Activate logging for all requests,Attivare logging per tutte le richieste dell'API
+Logs can be found in media/nrapps_idealo/log/idealo_requests.txt,I log si trovano nel file media/nrapps_idealo/log/idealo_requests.txt
+Product Options,Opzioni dei prodotti
+idealo Connect is active,Attivare idealo Connect
+Test Mode,Modalità di prova
+"Only validity check, no processing","Solo autenticazione, nessuna elaborazione"
+In case you have problems with the connection,Qualora si verificassero problemi con la connessione
+"Connection to idealo API has failed, please check the credentials.","La connessione all'API di idealo è fallita. Controlla i dati di accesso, per favore. "
+Connection to idealo API successful.,Connessione all'API di idealo eseguita con successo.
+"It seems you have no cronjobs running. They are needed for transferring data to idealo. We strongly suggest you setup cronjobs. See <a href=""http://www.magentocommerce.com/wiki/1_-_installation_and_configuration/how_to_setup_a_cron_job"" target=""_blank"">here</a> for details.","Sembra che i cronjob non siano attivi nel tuo negozio. Essi sono necessari per trasmettere i dati dei tuoi prodotti a idealo. Ti raccomandiamo di attivarli quanto prima. Clicca <a href=""http://www.magentocommerce.com/wiki/1_-_installation_and_configuration/how_to_setup_a_cron_job"" target=""_blank"">qui</a> per i dettagli."
+"The idealo Connect module has been installed and configured. Please update the <a href=""%s"">idealo Connect Index</a> now.","idealo Connect è stato installato e configurato con successo. Aggiorna ora l'<a href=""%s"">index idealo Connect</a>."
+"Configuration data has been changed. Please update the <a href=""%s"">idealo Connect Index</a> now.","I dati di configurazione sono stati modificati. Aggiorna ora l'<a href=""%s"">index idealo Connect</a>."
+Minimum order amount: %s,Ordine minimo: %s
+Minimum Order Surcharge,Sovrapprezzo in caso di non raggiungimento dell'ordine minimo
+Minimum Order Weight Surcharge,Sovrapprezzo in caso di non raggiungimento del peso minimo
+Minimum Order Value,Valore minimo dell'ordine
+Minimum Order Weight,Peso minimo dell'ordine
+Surcharge for Orders below Minimum Order Value,Sovrapprezzo in caso di ordini sotto il valore minimo
+Surcharge for Orders below Minimum Order Weight,Sovrapprezzo in caso di ordini sotto il peso minimo
+Unit for Weight,Unità di peso
+"i.e. g, lb, kg","es. g, kg"
+Is Active,Attivo
+"For orders below %s, a surcharge of %s will be charged.",Per ordini inferiori a %s verrà applicato un sovrapprezzo di %s.
+"For orders below a weight of %s %s, a surcharge of %s will be charged.",Per ordini di peso inferiore a %s %s verrà applicato un sovrapprezzo di %s.
+Fixed Surcharge,Sovrapprezzo fisso in Euro
+Percental Surcharge,Percentuale di sovrapprezzo
+Percental Surcharge Calculation Method,Metodo di calcolo della percentuale di sovrapprezzo
+Based on Product Price,In base al prezzo del prodotto
+Based on Product Price plus Shipping Cost,In base al prezzo del prodotto più i costi di spedizione
+Disable check of SSL certificate,Disattivare il certificato SSL
+Email Options,Opzioni e-mail
+Error Messages: Recipient Email Address,Messaggio di errore: E-mail del destinatario 
+Error Messages: Identity,Messaggio di errore: Mittente
+Error Messages: Template,Messaggio di errore: Template e-mail
+"Only generation of files, no transfer","Generare solo file, senza trasmissione"
+,
+"If you don't have access data yet, please activate the <strong>test mode</strong>.","Se non hai ancora i dati d'accesso, attiva la <strong>modalità di prova</strong>."
+Please configure and save this page now and then update the <strong>idealo Connect Index</strong>.,Configura e salva la pagina e poi aggiorna l'<strong>Index idealo Connect</strong>. 
+"After that, you will find a <strong>CSV file</strong> in the <strong>%s</strong> directory of your shop.",Successivamente troverai un <strong>file CSV</strong> nella directory <strong>%s</strong> del tuo negozio.
+"Please send that file to <strong>%s</strong> via email, including the URL and name of your shop and your contact data.","Invia il file per e-mail a <strong>%s</strong> assieme alla URL, al nome del negozio ed ai tuoi dati di contatto."
+"Once you have receive access data by idealo, please fill them in here and deactivate the test mode.",Appena ricevi i dati di accesso di idealo inseriscili qui e disattiva la modalità di prova.
+"The product data will then be transferred to idealo automatically. For that, you need to have a <strong>cron job</strong> running on your shop.","I dati dei prodotti saranno inviati automaticamente a idealo. Per far sì che ciò accada, devi avere il <strong>cronjob</strong> attivo nel tuo negozio."
+max. 150 chars,max. 150 caratteri
+Add contents of the following attribute(s) to product name,Aggiungere i seguenti attributi al nome del prodotto
+Add contents of the following attribute(s) to the export,Aggiungere i seguenti attributi all'esportazione
+Attribute,Attributo
+Sort Order,Classificazione
+Delete,Cancellare
+Listing,Pubblicazione
+Listing at,Pubblicare su
+for listing at,da pubblicare su
+Mapping,Mapping
+Attribute value,Valore dell'attributo
+"If no country specific value is set, delivery time will not be exported.","Se non è stato configurato un valore specifico per ogni nazione, il termine di consegna non verrà esportato."
+Update Mapping with new Options,Aggiornare il mapping con nuove opzioni
+Options have been updated.,Le opzioni sono state aggiornate. 
+Unsaved changes will be lost. Please save your changes before.,"Le modifiche non salvate verranno perse. Per favore, salva le tue modifiche."
+idealo direct sale allowed,Autorizzazione vendita diretta (solo in Germania)
+Allow direct sale via idealo for this product,Autorizzare la vendita diretta attraverso idealo di questo prodotto
+Please check the access data and the state of the registration of your shop at idealo.,"Per favore, controlla i dati d'accesso e lo stato della registrazione del tuo negozio su idealo."

@@ -1,0 +1,182 @@
+idealo Connect,idealo Connect
+Settings,Configuration
+"Directory ""%s"" does not exist. Installation of idealo Connect incomplete?","Le dossier  ""%s"" n’existe pas. L’installation d’idealo Connect est-elle complète ?"
+Re-Generation necessary,Il est nécessaire de créer un nouveau dossier
+"File <a href=""%s"" target=""_blank"">%s</a> was generated successfully","Le fichier <a href=""%s"" target=""_blank"">%s</a> a été créé avec succès"
+idealo Connect - Manage Attributes,idealo Connect – gestion des attributs
+Manage Attributes,Gestion des attributs
+Feed Attributes,Attributs du flux produits
+Create new attribute,Créer un nouvel attribut
+Use existing attribute,Utiliser un attribut existant
+Manufacturer,Fabricant
+Manufacturer SKU,Numéro de référence du fabricant
+Delivery Time,Délai de livraison
+Delivery Times,Délais de livraison
+Delivery Time (out of stock),Délai de livraison (article non disponible)
+Add,Ajouter
+Shipping Cost,Frais de port
+Shipping Cost idealo.de,Frais de port idealo.de
+Shipping Cost idealo.at,Frais de port idealo.at
+Shipping Cost idealo.co.uk,Frais de port idealo.co.uk
+Shipping Cost idealo.fr,Frais de port idealo.fr
+Shipping Cost idealo.it,Frais de port idealo.it
+Shipping Cost idealo.es,Frais de port idealo.es
+Shipping Cost idealo.pl,Frais de port idealo.pl
+Shipping Cost idealo.in,Frais de port idealo.in
+Shipping Cost based on Price,Frais de port selon prix
+Shipping Cost based on Weight,Frais de port selon poids
+Shipping Comment,Commentaire de livraison
+Shipping Comments,Commentaires de livraison
+Comment on shipping of article or methods of payment offered,Commentaire à propos de l’envoi du produit ou des moyens de paiement proposés
+OEN,Numéro OEN (référence constructeur)
+"Original replacement part number consisting of manufacturer's initials and identifier code, separated by a comma","Numéro de la pièce de remplacement originale, correspondant à l’initiale du fabricant et à son code d’identification, séparés par une virgule"
+KBA,Numéro KBA (utilisé uniquement en Allemagne)
+"Kraftfahrt-Bundesamt (KBA) number, i.e. German Federal Motor Transport Authority number, consisting of the 4 digits in the Manufacturer Key Number and the first 3 characters in the Type Key Number","Le numéro de Kraftfahrt-Bundesamt (KBA), déterminé par le ministère fédérale allemand du transport, permet d’identifier le constructeur automobile et le modèle du véhicule concerné."
+EAN,Code EAN (code barre)
+"EAN/GTIN of the offer, improves allocation to product catalogue. ISBN numbers can also be given here",Les codes EAN permettent de faciliter la reconnaissance automatique de vos offres et d’optimiser leur référencement sur idealo. Les numéros ISBN peuvent aussi être mentionnés ici.
+HAN,Référence du fabricant
+"Article number defined by manufacturer, improves allocation to product catalogue",Il s’agit du numéro d’article défini par le constructeur. Il facilite également la reconnaissance automatique et le classement de vos offres.
+PZN,PZN (utilisé uniquement en Allemagne)
+Central Pharmaceutical Number of offer (only for medical offers),Pharmazeutische Zentralnummer (utilisé pour les produits médicaux)
+Is Used,Produit d’occasion
+"Marks offers that are not new (e.g. returns, demonstration model, opened packaging, etc.)","Pour les articles qui ne sont pas neufs (par exemple : issus d’un retour de marchandise, modèle d’exposition, emballage ouvert, etc.)"
+Is Rebuild,Réplique
+"Marks offers that are a replica of products by another manufacturer. This mark-up is necessary if the original product comes up in the offer title (e.g. ""Quality battery compatible with Canon HK-2222"")",Pour les répliques de produits manufacturés par d’autres fabricants. Information nécessaire lorsqu’un nom d’article original est mentionné dans le titre de l’offre (par exemple : “batterie compatible avec le Canon HK-2222”)
+Has Contract,Avec contrat
+Marks offers that can only be acquired through signing a contract (e.g. mobile phones),Pour toute offre nécessitant la conclusion d’un contrat (par exemple : smartphone avec forfait téléphonique)
+Voucher Code,Code promotionnelle
+Voucher code plus description. Please be sure to stick to the format of the example! i.e. CODE (description),"Merci de mentionner le code promotionnelle et une description entre parenthèses, comme suit : CODE (description) "
+Merchant,Marchand
+Merchant name (for resellers or marketplace merchants),Nom du marchand (si revendeur ou vendeur sur une marketplace)
+The attributes have been assigned.,Les attributs ont été assignés
+The attributes have been assigned. Please choose the default settings now.,"Les attributs ont été assignés, vous pouvez désormais définir la configuration par défaut"
+"%s attributes have been created. You can fill them on the product edit page in the tab ""idealo"".",%s des attributs ont été créés. Vous pouvez désormais vous rendre sur l’onglet “idealo” et les renseigner dans la page d’édition des produits
+"idealo Connect requires you to set up attributes. Click <a href=""%s"">here</a> to go to the attribute management.","Vous devez configurer les attributs des articles pour utiliser idealo Connect. Cliquez <a href=""%s"">ici</a> pour accéder à la configuration des articles."
+Default Values,Valeurs par défaut
+Export the following Product Types,Exporter les types d’articles suivants
+All,Tous
+Export Bundle Products without a fixed price,Exporter les groupes de produits (bundle) sans prix fixes
+No Price will be available for those products,Aucun prix ne sera disponible pour ces produits
+,
+Use Default,Utiliser la configuration par défaut
+Calculate automatically,Calculer automatiquement
+In Stock,En stock
+Available for Order,Disponible
+Out of Stock,Indisponible
+Export Parent Product,Exporter le produit parent
+Export Children Products,Exporter les variantes du produit (produits enfants)
+Allowed Product Types,Types d’articles autorisés 
+Export Type for Configurable Products,Exporter le type pour les articles configurables
+No Export,Ne pas exporter
+Product Data,Données produit
+Shipping Costs Calculation Method,Méthode de calcul des frais de port
+From Price,Prix à partir de
+"Only for Shipping Costs Calculation Method ""Price"" (see above)",Seulement pour la méthode de calcul basée sur le prix de vente (voir ci-dessus)
+"Only for Shipping Costs Calculation Method ""Weight"" (see above)",Seulement pour la méthode de calcul basée sur le poids de l’article (voir ci-dessus)
+"Only for Shipping Costs Calculation Method ""Weight"" (see above)<br />Product attribute ""Weight"" [weight] will be used to determine weight.",Seulement pour la méthode de calcul basée sur le poids de l’article (voir ci-dessus). <br />L’attribut produit “poids” [weight] sera utilisé pour renseigner le poids de l’article.
+You can find the settings for the <strong>minimum order amount</strong> in System -> Configuration -> Sales,La configuration pour le <strong>montant minimum de commande</strong> se trouve dans Système -> Configuration -> Ventes
+From Weight,Poids à partir de
+Exclude from idealo Connect,Exclure d’idealo Connect
+"Exclude only Categories, not included Products","Exclure uniquement les catégories, pas les produits contenus dans ces catégories"
+Leave empty to use default,Laisser vide pour une utilisation par défaut
+Activated Payment Methods,Moyens de paiement actifs
+Payment Method,Moyens de paiement
+Surcharge,Supplément
+Invoice,Facture
+Credit Card,Carte de crédit
+Prepaid,Virement bancaire
+PayPal,PayPal
+Debit Payment,Paiement par débit
+Cash on Delivery,Paiement cash à la commande
+Bank transfer via Sofort,Paiement immédiat via Sofort
+Payment by post,Mandat cash
+e-payment standard (Austria),e-paiement standard (Autriche)
+Attribute Sets,Groupes d’attributs
+Allowed Attribute Sets,Groupes d’attributs autorisés
+Calculate price of configurable child products as,Articles configurables : calculer le prix des variantes produits en tant que
+Price of parent product with modifications (Magento Default),Prix du produit parent avec déclinaisons (par défaut pour Magento)
+Price of parent product without modifications,Prix du produit parent sans déclinaisons
+"Price of child product (i.e. with BCP, SCP)",Prix des variantes produits
+"Use option ""child product"" or ""parent product without modifications"" for better performance. There can be memory leaks with the option ""parent product <strong>with</strong> modifications"".",Sélectionnez l’option “variante” ou “produit parent sans déclinaisons” pour de meilleures performances. Des problèmes d’enregistrement peuvent survenir avec l’option “produit parent <strong>avec</strong> déclinaisons”.
+Base Price,Prix unitaire
+"The idealo Connect is now installed. <a href=""%s"">Click here to start the configuration process.</a>","idealo Connect est désormais installé. <a href=""%s"">Cliquez ici pour débuter la configuration.</a>"
+idealo Connect Setup Step 1/2: Attributes Setup,"Configuration d’idealo Connect, étape 1/2 : configuration des attributs"
+idealo Connect Setup Step 2/2: Configuration and Default Values,"Configuration d’idealo Connect, étape 2/2 : configuration et valeurs par défaut"
+"If you see an error here, please logout and login again.","Si vous constatez des erreurs ici, merci de vous déconnecter et de vous connecter à nouveau."
+"<a href=""%s"" target=""_blank"">Possible Values</a>","<a href=""%s"" target=""_blank"">Valeurs possibles</a>"
+Do not use this attribute,Ne pas utiliser cet attribut
+Select field (dropdown),Champ de sélection (menu déroulant)
+Select field (yes / no),Champ de sélection (oui / non)
+Text field,Champ texte
+Text field (decimal value),Champ texte (valeur décimale)
+Text field (price),Champ texte (prix)
+Energy Efficiency Class,Classe énergétique
+Used in following feed templates,Utilisé dans les modèles de flux suivants
+Use Configuration Value,Utiliser la valeur de configuration
+Yes,Oui
+No,Non
+API URL for Update Requests,URL de l’API pour les mises à jour nécessaires
+idealo User,Nom d’utilisateur idealo
+idealo Password,Mot de passe idealo
+Indexing of generated Product Data for idealo Connect,Indexation des données produits générées pour idealo Connect
+Contact csv@idealo.de to gain access.,Merci de nous contacter à l’adresse tam@idealo.fr pour obtenir ces informations.
+Activate logging for all requests,Activer le login pour toute requête API
+Logs can be found in media/nrapps_idealo/log/idealo_requests.txt,Les logs se trouvent dans le fichier media/nrapps_idealo/log/idealo_requests.txt
+Product Options,Options du produit
+idealo Connect is active,Activer idealo Connect
+Test Mode,Mode test
+"Only validity check, no processing","Validation uniquement, aucun traitement"
+In case you have problems with the connection,Si vous avez des problèmes de connexion
+"Connection to idealo API has failed, please check the credentials.","La connexion à l’API idealo a échoué, merci de vérifier vos identifiants de connexion."
+Connection to idealo API successful.,Connexion à l’API idealo réussie
+"It seems you have no cronjobs running. They are needed for transferring data to idealo. We strongly suggest you setup cronjobs. See <a href=""http://www.magentocommerce.com/wiki/1_-_installation_and_configuration/how_to_setup_a_cron_job"" target=""_blank"">here</a> for details.","Il semblerait qu’aucune actualisation automatique (tâches Cron) ne soit configurée dans votre système marchand. Cela sera obligatoire pour transmettre les données relatives à vos offres à idealo. Nous vous invitons à activer rapidement les tâches Cron. Pour de plus amples informations à ce sujet : <a href=""http://www.magentocommerce.com/wiki/1_-_installation_and_configuration/how_to_setup_a_cron_job"" target=""_blank"">hier</a>"
+"The idealo Connect module has been installed and configured. Please update the <a href=""%s"">idealo Connect Index</a> now.","Le module d’export idealo Connect a été installé et configuré avec succès. Merci désormais d’actualiser l’<a href=""%s"">index idealo Connect</a>."
+"Configuration data has been changed. Please update the <a href=""%s"">idealo Connect Index</a> now.","Les données de configuration ont été modifiées. Merci désormais d’actualiser l’<a href=""%s"">index idealo Connect</a>."
+Minimum order amount: %s,Montant minimum de commande : %s
+Minimum Order Surcharge,Supplément si le montant minimum de commande n’est pas atteint
+Minimum Order Weight Surcharge,Supplément si le poids minimum de commande n’est pas atteint
+Minimum Order Value,Montant minimum de la commande
+Minimum Order Weight,Poids minimum de la commande
+Surcharge for Orders below Minimum Order Value,Supplément pour toute commande inférieure au minimum d’achat
+Surcharge for Orders below Minimum Order Weight,Supplément pour toute commande inférieure au poids minimum de commande
+Unit for Weight,Unité de poids
+"i.e. g, lb, kg","par exemple : g, kg"
+Is Active,Est actif
+"For orders below %s, a surcharge of %s will be charged.","Pour toute commande inférieure à %s, un supplément de %s sera facturé."
+"For orders below a weight of %s %s, a surcharge of %s will be charged.","Pour toute commande dont le poids est inférieur à %s, un supplément de %s sera facturé."
+Fixed Surcharge,Supplément fixe
+Percental Surcharge,Supplément proportionnel
+Percental Surcharge Calculation Method,Méthode de calcul pour l’augmentation proportionnelle
+Based on Product Price,Basé sur le prix de vente
+Based on Product Price plus Shipping Cost,Basé sur le prix de vente + les frais de port
+Disable check of SSL certificate,Désactiver la certification SSL
+Email Options,Options d’email
+Error Messages: Recipient Email Address,Messages d’erreur : adresse email du destinataire
+Error Messages: Identity,Messages d’erreur : expéditeur
+Error Messages: Template,Messages d’erreur : template email
+"Only generation of files, no transfer","Création de fichiers uniquement, aucune transmission"
+,
+"If you don't have access data yet, please activate the <strong>test mode</strong>.",Merci d’activer le <strong>mode test</strong> si vous n’avez pas encore d’identifiants.
+Please configure and save this page now and then update the <strong>idealo Connect Index</strong>.,Merci de configurer et d’enregistrer cette page avant d’actualiser l’<strong>index idealo Connect </strong>.
+"After that, you will find a <strong>CSV file</strong> in the <strong>%s</strong> directory of your shop.",Vous trouverez ensuite un <strong>fichier CSV</strong> dans le dossier <strong>%s</strong> de votre boutique.
+"Please send that file to <strong>%s</strong> via email, including the URL and name of your shop and your contact data.","Merci de bien vouloir envoyer ce fichier par email à l’adresse <strong>%s</strong>, accompagné de l’URL et du nom de votre boutique en ligne, ainsi que de vos coordonnées."
+"Once you have receive access data by idealo, please fill them in here and deactivate the test mode.","Dès que vous aurez reçu vos identifiants de la part d’idealo, merci de les renseigner ici avant de désactiver le mode test."
+"The product data will then be transferred to idealo automatically. For that, you need to have a <strong>cron job</strong> running on your shop.","Le fichier de produits sera ensuite transmis à idealo de manière automatique. Pour ce faire, veillez toutefois à configurer une <strong>tâche Cron</strong> pour votre boutique."
+max. 150 chars,150 caractères max.
+Add contents of the following attribute(s) to product name,Rattacher les attributs suivants aux noms des produits
+Add contents of the following attribute(s) to the export,Ajouter les attributs suivants à l’export
+Attribute,Attribut
+Sort Order,Classification
+Delete,Supprimer
+Listing,Référencement
+Listing at,Référencement sur
+for listing at,Pour un référencement sur
+Mapping,Mapping
+Attribute value,Valeur d’attribut
+"If no country specific value is set, delivery time will not be exported.","Si aucune valeur relative au pays n’est séléctionnée, les informations concernant les délais de livraion ne seront pas exportées."
+Update Mapping with new Options,Actualiser le mapping avec les nouvelles options
+Options have been updated.,Les options ont été actualisées
+Unsaved changes will be lost. Please save your changes before.,"Les modifications non sauvegardées seront perdues, merci donc de sauvegarder tout changement au préalable."
+idealo direct sale allowed,Vente directe idealo autorisée (utilisé uniquement en Allemagne)
+Allow direct sale via idealo for this product,Permet de proposer ce produit à la vente directe sur idealo
+Please check the access data and the state of the registration of your shop at idealo.,Merci de vérifier vos identifiants d’accès et le statut de votre boutique chez idealo.
