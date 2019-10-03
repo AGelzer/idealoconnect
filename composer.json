@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/idealoConnect",
+    "name": "OpenMageModuleFostering\/idealoConnect",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "The new idealo Connect transfers optimised product data fully automatically from your online shop to idealo",
     "authors": [
-    {
-        "name": "idealo",
-        "email": "exportmodule@idealo.de"
-    }
-],
+        {
+            "name": "idealo",
+            "email": "exportmodule@idealo.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
