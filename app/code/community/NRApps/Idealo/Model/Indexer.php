@@ -404,13 +404,11 @@ class NRApps_Idealo_Model_Indexer extends Mage_Index_Model_Indexer_Abstract
                         ->load($product);
                 }
 
-                if (!$product->getId()) {
+                if (!$product->getId() || !$this->_canExportProduct($product, $storeId)) {
                     $this->_deleteIndexForProduct($product->getId(), null, $storeId);
-                    continue;
-                }
-
-                if (!$this->_canExportProduct($product, $storeId)) {
-                    $this->_deleteIndexForProduct($product->getId(), null, $storeId);
+                    if ($forceStoreEmulation) {
+                        $appEmulation->stopEnvironmentEmulation($initialEnvironmentInfo);
+                    }
                     continue;
                 }
 
